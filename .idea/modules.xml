@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XcodeIam.iml" filepath="$PROJECT_DIR$/XcodeIam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XcodeIam_Solution/XcodeIam_Solution.iml" filepath="$PROJECT_DIR$/XcodeIam_Solution/XcodeIam_Solution.iml" />
+    </modules>
+  </component>
+</project>
