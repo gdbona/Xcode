@@ -66,7 +66,7 @@ public class FGM_ListaSeparacao extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fmg__lista_separacao, container, false);
+        return inflater.inflate(R.layout.fgm__lista_separacao, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
