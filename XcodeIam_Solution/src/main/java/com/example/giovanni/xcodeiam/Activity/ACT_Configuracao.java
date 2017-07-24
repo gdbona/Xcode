@@ -1,7 +1,9 @@
-package com.example.giovanni.xcodeiam;
+package com.example.giovanni.xcodeiam.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.giovanni.xcodeiam.R;
 
 public class ACT_Configuracao extends AppCompatActivity {
 

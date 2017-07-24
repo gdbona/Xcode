@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ACT_Login"
+            android:name=".Activity.ACT_Login"
             android:label="@string/title_activity_act__login">
             <intent-filter>
                 <action android:name="android.intent.action.ALL_APPS" />

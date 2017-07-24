@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.giovanni.xcodeiam.ACT_Login">
+    tools:context="com.example.giovanni.xcodeiam.Activity.ACT_Login">
 
     <TextView
         android:id="@+id/textView2"
