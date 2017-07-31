@@ -33,6 +33,7 @@
                 <category android:name="android.intent.category.MONKEY" />
             </intent-filter>
         </activity>
+        <activity android:name=".ACT_Configuracao"></activity>
     </application>
 
 </manifest>
