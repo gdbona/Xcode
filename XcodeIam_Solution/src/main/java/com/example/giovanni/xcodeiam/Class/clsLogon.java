@@ -9,5 +9,6 @@ public class clsLogon {
     public static class clsLogonInt {
 
         public static boolean BOLLOGON;
+        public static String NMUsuario;
     }
 }
