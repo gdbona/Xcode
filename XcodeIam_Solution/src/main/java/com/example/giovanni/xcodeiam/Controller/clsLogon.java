@@ -1,4 +1,4 @@
-package com.example.giovanni.xcodeiam.Class;
+package com.example.giovanni.xcodeiam.Controller;
 
 /**
  * Created by Giovanni on 17/07/2017.

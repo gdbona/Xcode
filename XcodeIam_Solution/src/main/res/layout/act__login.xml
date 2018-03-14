@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.giovanni.xcodeiam.Activity.ACT_Login">
+    tools:context="com.example.giovanni.xcodeiam.View.Activity.ACT_Login">
 
     <TextView
         android:id="@+id/textView2"
@@ -30,7 +30,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/EDT_Usuario"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -69,25 +68,31 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
         android:onClick="OnClickEntrar"
         android:text="@string/BTN_Entrar"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TXT_SENHA"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.507" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/TV_WebService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="OnClickCancelar"
-        android:text="@string/BTN_Cancelar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/TXT_SENHA"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp" />
+        android:text="@string/TV_WebService"
+        android:onClick="onClick_WebService"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

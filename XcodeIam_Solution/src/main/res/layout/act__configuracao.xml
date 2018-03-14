@@ -5,6 +5,6 @@
     android:id="@+id/act_Configuracao"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.giovanni.xcodeiam.Activity.ACT_Configuracao">
+    tools:context="com.example.giovanni.xcodeiam.View.Activity.ACT_Configuracao">
 
 </android.support.constraint.ConstraintLayout>

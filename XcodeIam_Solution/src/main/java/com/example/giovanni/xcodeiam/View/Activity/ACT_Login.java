@@ -1,11 +1,11 @@
-package com.example.giovanni.xcodeiam.Activity;
+package com.example.giovanni.xcodeiam.View.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.giovanni.xcodeiam.Class.clsLogon;
+import com.example.giovanni.xcodeiam.Controller.clsLogon;
 import com.example.giovanni.xcodeiam.R;
 
 import static android.app.PendingIntent.getActivity;

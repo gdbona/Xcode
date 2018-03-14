@@ -1,4 +1,4 @@
-package com.example.giovanni.xcodeiam.Activity;
+package com.example.giovanni.xcodeiam.View.Activity;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
@@ -24,13 +24,13 @@ public class ACT_Configuracao extends Activity {
         setContentView(R.layout.act__configuracao);
 
         // Get ListView object from xml
-        ListView lstConfiguracao  = (ListView) findViewById(R.id.lst_Configuracao);
+        //ListView lstConfiguracao  = (ListView) findViewById(R.id.lst_Configuracao);
 
         // Defined Array values to show in ListView
-        String[] values = new String[] { "Nome",
-                "E-mail",
-                "Senha"
-        };
+//        String[] values = new String[] { "Nome",
+//                "E-mail",
+//                "Senha"
+//        };
 
         // Define a new Adapter
         // First parameter - Context
@@ -38,22 +38,22 @@ public class ACT_Configuracao extends Activity {
         // Third parameter - ID of the TextView to which the data is written
         // Forth - the Array of data
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+//                android.R.layout.simple_list_item_1, android.R.id.text1, values);
 
 
         // Assign adapter to ListView
-        lstConfiguracao.setAdapter(adapter);
+        //lstConfiguracao.setAdapter(adapter);
 
         // ListView Item Click Listener
-        lstConfiguracao.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //lstConfiguracao.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view,
+//                                    int position, long id) {
 
                 // ListView Clicked item index
-                int itemPosition     = position;
+//                int itemPosition     = position;
 
                 // ListView Clicked item value
 
@@ -66,6 +66,6 @@ public class ACT_Configuracao extends Activity {
 
             }
 
-        });
-    }
+//        });
+//    }
 }

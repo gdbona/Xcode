@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.giovanni.xcodeiam.Fragments.FGM_Configuracao">
+    tools:context=".View.Fragment.Fgm_ListaSeparacao">
 
     <!-- TODO: Update blank fragment layout -->
-
     <ListView
-        android:id="@+id/lst_Configuracao"
+        android:id="@+id/LST_Itens"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </FrameLayout>
