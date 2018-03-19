@@ -34,14 +34,15 @@ public class ACT_Login extends Activity {
     }
 
     public void onClick_WebService(View v) {
-        FragmentManager fragmentManager = getFragmentManager ();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction ();
-
-        fgm_webservice myfragment = new fgm_webservice();  //your fragment
-
-        // work here to add, remove, etc
-//        fragmentTransaction.add (R.id.CONST_Layout, myfragment);
-        fragmentTransaction.commit ();
+        try
+        {
+        Intent intent = new Intent(this, ACT_Configuracao.class);
+        startActivity(intent);
+        }
+        catch (Exception ex)
+        {
+            Toast.makeText(this, "Erro ao abrir ACT_Configuracao", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }
