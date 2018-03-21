@@ -38,6 +38,7 @@ public class ACT_Login extends Activity {
         {
         Intent intent = new Intent(this, ACT_Configuracao.class);
         startActivity(intent);
+
         }
         catch (Exception ex)
         {
