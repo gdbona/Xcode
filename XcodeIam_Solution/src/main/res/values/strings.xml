@@ -43,4 +43,5 @@
     <string name="TV_WebService">Web Service</string>
     <string name="BTN_TestarConexao">Testar</string>
     <string name="endere_o_webservice">Endereço Web Service</string>
+    <string name="title_activity_act__configuracao">ACT_Configuracao</string>
 </resources>

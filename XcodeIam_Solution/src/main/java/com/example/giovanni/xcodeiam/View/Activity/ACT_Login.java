@@ -36,9 +36,8 @@ public class ACT_Login extends Activity {
     public void onClick_WebService(View v) {
         try
         {
-        Intent intent = new Intent(this, ACT_Configuracao.class);
-        startActivity(intent);
-
+        //Intent intent = new Intent(this, ACT_Configuracao.class);
+        //startActivity(intent);
         }
         catch (Exception ex)
         {
