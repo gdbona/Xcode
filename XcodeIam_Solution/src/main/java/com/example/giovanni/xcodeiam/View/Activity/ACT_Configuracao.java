@@ -17,7 +17,7 @@ public class ACT_Configuracao extends AppCompatActivity {
         setContentView(R.layout.act_configuracao);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+String st;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
