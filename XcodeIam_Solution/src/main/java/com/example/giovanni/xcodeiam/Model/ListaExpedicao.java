@@ -4,7 +4,7 @@ package com.example.giovanni.xcodeiam.Model;
  * Created by vinicius on 16/03/2018.
  */
 
-public class ListaExpedicao {
+public class EXPEDITIONLIST {
     public Integer ListaId;
     public String ListaNum;
 

@@ -15,16 +15,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.giovanni.xcodeiam.View.Activity.ACT_Login;
-import com.example.giovanni.xcodeiam.Controller.clsLogon;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public MainActivity(){
-        if (clsLogon.clsLogonInt.BOLLOGON == true) {
-            finish();
 
-        }
     }
 
 
