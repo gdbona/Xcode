@@ -37,7 +37,7 @@
         <activity
             android:name=".View.Activity.ACT_Configuracao"
             android:label="@string/title_activity_act__configuracao"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
