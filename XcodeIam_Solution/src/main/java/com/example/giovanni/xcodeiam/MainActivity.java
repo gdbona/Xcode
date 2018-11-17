@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Intent Consultar = new Intent(this, ACT_Login.class);
+        Intent Consultar = new Intent(this, ACT_Pedido.class);
         startActivity(Consultar);
 
     }
