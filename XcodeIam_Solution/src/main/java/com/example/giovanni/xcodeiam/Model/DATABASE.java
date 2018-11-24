@@ -17,20 +17,12 @@ import java.util.regex.Pattern;
 public class DATABASE  extends SQLiteOpenHelper {
 
     public static final String NOME_BANCO = "GESTORICL.db";
-    public static final String TABELA = "livros";
+    public static final String TABLE = "DATABASE";
     public static final int VERSAO = 1;
 
     private static final String DATABASE_NAME = "gestoricl";    // Database Name
     private static final String TABLE_NAME = "EMFSESSION";   // Table Name
     private static final int DATABASE_Version = 1;    // Database Version
-    private static final long IDSESSION = 0;
-    private static final String SGUSER = "MASTER";
-    private static final String PASSWORD = "MTM";
-    private static final String SGENVIRONMENT = "GESTOR";
-    private static final String SGLANGUAGE = "PT-BR";
-    private static final String EQUIPMENT = "TABLETE";
-    private static final String DHSESSION = "";
-    private static final String MENSAGEM = "TESTE";
 
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
@@ -57,15 +49,15 @@ public class DATABASE  extends SQLiteOpenHelper {
 //                    + ")";
 
             //Deixar fixo por enquanto ,nao achei uma função para percorrar todos os objetos da model
-//            LARR_Model[LINT_COUNT] = EMFSESSION.class;
+            LARR_Model[LINT_COUNT] = EMFSESSION.class;
 //            LARR_Model[LINT_COUNT++] = EQUIPAMENTO.class;
 //            LARR_Model[LINT_COUNT++] = EQUIPAMENTOCOMPONENTE.class;
 //            LARR_Model[LINT_COUNT++] = EQUIPAMENTOCONTADOR.class;
 //            LARR_Model[LINT_COUNT++] = EMFSESSION.class;
 //            LARR_Model[LINT_COUNT++] = EMFSESSION.class;
-//
-//            for(LINT_COUNT=0;LARR_Model.length>LINT_COUNT;LINT_COUNT++)
-//            {CREATE_TABLE += FU_Monta_Create_Objeto(EMFSESSION.class);}
+
+            for(LINT_COUNT=0;LARR_Model.length>LINT_COUNT;LINT_COUNT++)
+            {CREATE_TABLE += FU_Monta_Create_Objeto(EMFSESSION.class);}
 
             db.execSQL(CREATE_TABLE);
         } catch (Exception e) {
@@ -109,7 +101,8 @@ public class DATABASE  extends SQLiteOpenHelper {
             LSTB_SQL = new StringBuilder();
             LSTB_SQL.append("CREATE TABLE " + LSTR_NMVARIAVEL + " (");
 
-            LSTB_SQL.append(" ID" + LSTR_NMVARIAVEL + " integer primary key autoincrement, ");
+//            LSTB_SQL.append(" ID " + LSTR_NMVARIAVEL + " integer primary key autoincrement, ");
+            LSTB_SQL.append(" ID " + " integer primary key autoincrement, ");
 
             for (Field campo : campos) {
                 try {
@@ -154,7 +147,7 @@ public class DATABASE  extends SQLiteOpenHelper {
 
             LSTB_SQL.append(" DHMANUTENANCE text  ");
             LSTB_SQL.append(" )");
-        } catch (Exception e) {
+        }catch (Exception e) {
             e.printStackTrace();
         }
         return LSTB_SQL.toString();
@@ -202,4 +195,6 @@ public class DATABASE  extends SQLiteOpenHelper {
 
         return LSTR_Return;
     }
+
 }
+
