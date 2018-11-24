@@ -14,8 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.giovanni.xcodeiam.View.Activity.ACT_Login;
 import com.example.giovanni.xcodeiam.Controller.clsLogon;
+import com.example.giovanni.xcodeiam.View.Activity.ACT_ListaSeparacao;
+import com.example.giovanni.xcodeiam.View.Activity.ACT_Pedido;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Intent Consultar = new Intent(this, ACT_Pedido.class);
+        Intent Consultar = new Intent(this, ACT_ListaSeparacao.class);
         startActivity(Consultar);
 
     }

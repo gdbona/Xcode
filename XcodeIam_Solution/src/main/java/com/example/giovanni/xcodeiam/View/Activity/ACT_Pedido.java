@@ -1,4 +1,4 @@
-package com.example.giovanni.xcodeiam;
+package com.example.giovanni.xcodeiam.View.Activity;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.giovanni.xcodeiam.R;
 
 import java.util.ArrayList;
 import java.util.Locale;

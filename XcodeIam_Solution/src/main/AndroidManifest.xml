@@ -43,7 +43,8 @@
             android:name=".View.Activity.ACT_Configuracao"
             android:label="@string/title_activity_act__configuracao"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".View.Activity.ACT_ConfigWebService"></activity>
+        <activity android:name=".View.Activity.ACT_ConfigWebService" />
+        <activity android:name=".View.Activity.ACT_ListaSeparacao"></activity>
     </application>
 
 </manifest>
