@@ -9,19 +9,22 @@
             android:id="@+id/NrLista"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_marginLeft="50px"/>
+            android:layout_marginLeft="50px"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/ClienteLista"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_marginLeft="150px"/>
+            android:layout_marginLeft="150px"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/TotalLista"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_marginLeft="350px"/>
+            android:layout_marginLeft="350px"
+            android:textAlignment="center"/>
     </TableRow>
 
 </TableLayout>

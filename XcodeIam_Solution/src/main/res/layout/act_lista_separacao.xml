@@ -1,13 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.giovanni.xcodeiam.View.Activity.ACT_ListaSeparacao">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="520px"
+        android:background="@drawable/screen_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TXT_NrLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="Nr Lista: "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EDT_NrLista"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TXT_NrLista"
+            app:layout_constraintTop_toTopOf="parent"></EditText>
+
+        <TextView
+            android:id="@+id/TXT_ClienteLista"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Cliente: "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TXT_NrLista" />
+
+        <EditText
+            android:id="@+id/EDT_ClienteLista"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TXT_ClienteLista"
+            app:layout_constraintTop_toBottomOf="@+id/EDT_NrLista"></EditText>
+
+        <TextView
+            android:id="@+id/TXT_Produtos"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Produtos: "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TXT_ClienteLista" />
+
+        <EditText
+            android:id="@+id/EDT_Produto"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TXT_Produtos"
+            app:layout_constraintTop_toBottomOf="@+id/EDT_ClienteLista"></EditText>
+
+        <Switch
+            android:id="@+id/SWT_Finalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Finalizados   "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EDT_Produto" />
+
+    </android.support.constraint.ConstraintLayout>
+
     <ListView
         android:id="@+id/LST_ListaSeparacao"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520px"
+        android:background="@drawable/screen_border" />
+</RelativeLayout>
