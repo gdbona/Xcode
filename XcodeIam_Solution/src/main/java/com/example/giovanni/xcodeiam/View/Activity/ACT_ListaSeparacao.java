@@ -110,7 +110,7 @@ public class ACT_ListaSeparacao extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(ACT_ListaSeparacao.this, "You Clicked at " + NrLista[+position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(ACT_ListaSeparacao.this, "Voce clicou no picking: " + NrLista[+position], Toast.LENGTH_SHORT).show();
             }
         });
     }

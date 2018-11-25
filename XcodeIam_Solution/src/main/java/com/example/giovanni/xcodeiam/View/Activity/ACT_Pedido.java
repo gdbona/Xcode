@@ -2,6 +2,7 @@ package com.example.giovanni.xcodeiam.View.Activity;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -15,12 +16,15 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.giovanni.xcodeiam.R;
+import com.example.giovanni.xcodeiam.SpeechToText;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Random;
 
-public class ACT_Pedido extends Activity implements TextToSpeech.OnInitListener {
+public class ACT_Pedido extends Activity  implements TextToSpeech.OnInitListener {
 
     //Variaveis para converter texto para voz
     private Button   BTN_FalarTexto;
@@ -30,6 +34,24 @@ public class ACT_Pedido extends Activity implements TextToSpeech.OnInitListener 
     private static final int REQ_CODE_SPEECH_INPUT = 100;
     private TextView TextoCapturado;
     private Button BTN_Speak;
+
+    //voz automatico
+    private SpeechToText stt;
+    public static Context context;
+    private boolean firstTime = true;
+    //----------------
+
+    public static TextView getSubtitle() {
+        return subtitle;
+    }
+
+    public static void setsubtitle(String txt){
+
+        subtitle.setText(txt);
+
+    }
+
+    private static TextView subtitle;
 
 
     @Override
@@ -64,6 +86,12 @@ public class ACT_Pedido extends Activity implements TextToSpeech.OnInitListener 
                 startVoiceInput();
             }
         });
+
+        context = getApplicationContext();
+        if(isFirstTime())
+            setSST();
+
+        subtitle = (TextView) findViewById(R.id.TextoCapturado);
     }
 
     private void startVoiceInput() {
@@ -132,5 +160,27 @@ public class ACT_Pedido extends Activity implements TextToSpeech.OnInitListener 
         TTS_ConversorVoz.setPitch(0); // Afinação da Voz
         TTS_ConversorVoz.setSpeechRate(0);//Velocidade da Voz
         TTS_ConversorVoz.speak(Texto, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    public static Context getContext() {
+        return context;
+    }
+
+    public boolean isFirstTime() {
+        return firstTime;
+    }
+
+    public void setFirstTime(boolean firstTime) {
+        this.firstTime = firstTime;
+    }
+
+    public void setSST(){
+        stt = new SpeechToText();
+        setFirstTime(false);
+    }
+
+    public void onClickEscutar(View view) {
+        stt.backgroundVoiceListener.run();
+
     }
 }

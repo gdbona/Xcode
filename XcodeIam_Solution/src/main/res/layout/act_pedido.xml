@@ -50,6 +50,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:textSize="18sp"
+        android:onClick="onClickEscutar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
